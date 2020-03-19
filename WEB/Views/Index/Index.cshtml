@@ -1,0 +1,54 @@
+﻿@model IList<WEB.Models.Imagem>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/style.css" rel="stylesheet" />
+    <title>Galeria</title>
+</head>
+<body>
+    <aside>
+        <div class="logo"><a href=""><img src="../CSS/dba17d16-14cf-4d77-858b-0a7f8614c5a2_200x200.png" alt=""></a></div>
+        <a class="menu-item" href="">Pefil</a>
+        <a class="menu-item" href="">Explorar</a>
+        <a class="menu-item" href="">Contato</a>
+    </aside>
+    <section class="">
+        <div class="galeria">
+            @foreach (var item in ViewBag.imagem)
+            {
+
+                <div class="conteudo">
+                    <a href="#" class="info">Abrir</a>
+                    <img src=@item.FilePath alt="">
+                </div>
+
+            }
+        </div>
+
+
+            @*<div class="galeria">
+                @foreach (var item in ViewBag.imagem)
+                {
+                    <div class="conteudo">
+                        <a href="#" class="info">Abrir</a>
+                        <img src=@item.FilePath alt="">
+                    </div>
+                }
+            </div>
+            <div class="galeria">
+                @foreach (var item in ViewBag.imagem)
+                {
+                    <div class="conteudo">
+                        <a href="#" class="info">Abrir</a>
+                        <img src=@item.FilePath alt="">
+                    </div>
+                }
+            </div>*@
+        </section>
+</body>
+</html>
+
+
